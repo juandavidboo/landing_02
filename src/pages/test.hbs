@@ -1,79 +1,79 @@
-{{#> layouts/_Layout mlr="076-6051-PM 12/21"}}
+{{#> layouts/_Layout title="Patient survey" mlr="076-6055-PM 12/20"}}
+
 {{#*inline "header-block"}}
-	<title>Receive your copy</title>
+	<title>Confirmation</title>
 	<meta name="description" content="" />
 	<link rel="canonical" href="" />
 {{/inline}}
 
 {{#*inline "body-block"}}
-
 <div class="main-content">
 <div class="container section">
 	<div class="row">
-	<div class="col-xs-12 col-sm-10">
-		<div class="header">
-			<h1 class="short-bottom-margin color-3">Receive your copy of <span class="color-1"><em>The American Cancer Society New Healthy Eating Cookbook</em></span>.</h1>
+	<div class="col-sm-12">
+		<div class="icon-header">
+			<h1 class="short-bottom-margin">Sign up to receive your copy of <span class="color-4"><em>Man Cancer Sex</em> by Anne&nbsp;Katz, RN,&nbsp;Ph.D.</span></h1>
 			<div>
-				<p>We’re glad we can help continue to support you on your journey to making healthier choices and better eating habits. Before we can send you a copy of <em>The American Cancer Society New Healthy Eating Cookbook</em> by bestselling author Jeanne Besser, we need a few details.</p>
+				<div class="table-cell"><img class="floating-icon" src="../img/icon-survey.svg" alt="icon-survey"></div>
+				<div class="table-cell"><p>Even with a serious condition like advanced prostate cancer, intimacy can still remain an important part of your life. To get your copy of <em></em>Man Cancer Sex please fill out the form below.</p></div>
 			</div>
 		</div>
 	</div>
-	<div class="col-xs-12 col-sm-2"></div>
 	</div>
 </div>
 <div class="container section large-width">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6">
+		<div class=".col-xs-12 col-sm-7">
 		
 			<div class="form-wrapper">
 				<form method="post" name="book-signup-form">
-					<span class="instruction">*Required</span>
+					<span class="instruction">*Required information</span>
 					
-					<div class="book-fieldset paddingBottom-0">
+					<div class="book-fieldset paddingBottom-20">
 						
-						<label class="input-wrapper" for="first-name">First Name*
+						<label class="input-wrapper" for="first-name">*First Name
 							<input class="book-input" type="text" id="first-name" name="first-name" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="first-name-error">
 								This field is required.
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="last-name">Last Name*
+						<label class="input-wrapper" for="last-name">*Last Name
 							<input class="book-input" type="text" id="last-name" name="last-name" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="last-name-error">
 								This field is required.
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="email-address">Email Address*
+						<label class="input-wrapper" for="email-address">*Email Address
 							<input class="book-input" type="email" id="email-address" name="email-address" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="email-address-error">
 								Please enter a valid email, e.g. example@domain.com
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="street-address">Street Address*
+						<label class="input-wrapper" for="street-address">*Street Address
 							<input class="book-input" type="text" id="street-address" name="street-address" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="street-address-error">
 								This field is required.
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="apt-suite">Apartment/Building/Suite
+						<label class="input-wrapper" for="apt-suite">Apt/Suite
 							<input class="book-input" type="text" id="apt-suite" name="apt-suite">
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="apt-suite-error">
 								
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="city">City*
+						<label class="input-wrapper" for="city">*City
 							<input class="book-input" type="text" id="city" name="city" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="city-error">
 								This field is required.
 							</div> --}}
 						</label>
-						<label class="input-wrapper input-wrapper-col-1" for="state">State*
+						<label class="input-wrapper" for="state">*State
 							<select class="book-input small-input" id="state" name="state" required>
 								<option disabled selected value> </option>
 								<option value="Alabama">Alabama</option>
@@ -85,14 +85,14 @@
 								Please select your state.
 							</div> --}}
 						</label>
-						<label class="input-wrapper input-wrapper-col-2" for="pcode">ZIP Code*
+						<label class="input-wrapper" for="pcode">*Postal Code
 							<input class="book-input small-input" type="text" id="pcode" name="pcode" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="pcode-error">
 								This field is required.
 							</div> --}}
 						</label>
-						<label class="input-wrapper" for="phone">Phone Number*
+						<label class="input-wrapper" for="phone">*Phone Number
 							<input class="book-input small-input" type="tel" id="phone" name="phone" required>
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="phone-error">
@@ -101,10 +101,9 @@
 						</label>
 						
 						<label class="input-wrapper checkbox-18-over" for="18-older">
-							<span class="label-text">I am 18 years of age<span class="color-3">*</span></span>
+							*<span class="label-text">I am 18 years of age or older.</span>
 							<input class="book-input-checkbox" type="checkbox" name="18-older" id="18-older" required>
 							<span class="checkmark"></span>
-							
 							{{!-- Add/remove 'error' class to 'required-email' id --}}
 							{{!-- <div class="message" id="18-older-error">
 								Please check this box to continue.
@@ -113,7 +112,6 @@
 							<div class="tooltip"><img src="../img/icon-info.svg" width="22">
 								<span class="tooltiptext">We need you to acknowledge<br> that you are 18 years or older.</span>
 							</div>
-							<span class="error-placer"></span>
 						</label>
 					</div>					
 
@@ -122,31 +120,22 @@
 				</form>
 			</div>	
 		</div>
-		
 		<div class="col-xs-12 col-sm-5">
 			<div class="aside-wrapper">
-				<img class="content-img" src="../img/img-cookbook.jpg" alt="Healthy Eating Cookbook" width="212">
+				<img class="content-img" src="../img/KYPP-book.jpg" alt="Man Cancer Sex" width="181">
 				<div class="content-text">
 					<h2 class="large-bottom-margin color-4">What’s in the book?</h2>
-					<p class="small">In this cookbook, you’ll find nutritional basics that help take the guesswork out of making healthier choices. It willhelp you:</p>
+					<p class="small">Dr. Anne Katz talks about the changes and challenges that many men with cancer experience when it comes to intimacy and offers practical and compassionate advice on how to:</p>
 					<ul>
-						<li>Create – and know the parts of – a healthy diet</li>
-						<li>Use portion control to help maintain an appropriate weight</li>
-						<li>Find tips to make cooking at home easier and more manageable</li>
-						<li>Introduce delicious new dishes into your daily menu</li>
-						<li>Read food labels and interpret claims about the benefits of "healthy foods"</li>
+						<li>Cope with sexual hurdles during cancer treatment and beyond</li>
+						<li>Develop methods that will enhance communication between men and their partner </li>
+						<li>Find additional resources and learn about other strategies for managing sexuality and cancer</li>
 					</ul>
 				</div>
 			</div>	
 		</div>
-		<div class="col-xs-12 col-sm-1"></div>
 	</div>
 </div>
 </div>
-
-{{/inline}}
-
-{{#*inline "scripts-block"}}
-	<script type="text/javascript" src="../js/cookbook.js"></script>
 {{/inline}}
 {{/layouts/_Layout}}

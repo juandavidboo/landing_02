@@ -1,0 +1,52 @@
+.site-container {
+	width: 1000px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 70px;
+}
+
+.middle-content {
+	padding-top: 106px;
+
+	@media (min-width: $sm) {
+		min-height: calc(100vh - 308px);
+	}
+
+	.main-content {
+		background-color: #fff;
+		padding: 30px 0 0 0;
+
+		@media (min-width: $sm) {
+			
+		}
+			
+		> :nth-child(even) {
+			//background: #f2f0f0;
+		}
+		
+		.container {
+			//padding-bottom: 25px;
+			//padding-top: 25px;
+
+			@media (min-width: $sm) {
+				width: 100%; /*Overwrite bootstrap tablet behaviour*/
+			}
+		
+			@media (min-width: $md) {
+				width: 100%;
+
+				&.short-width {
+					padding-right: 240px;
+				}
+				&.large-width {
+					//padding-right: 40px;
+				}
+			}
+
+			/*&.short-padding-bottom {
+				padding-bottom: 20px;	
+			}*/
+			
+		}
+	}
+}

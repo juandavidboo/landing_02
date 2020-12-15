@@ -1,0 +1,82 @@
+header { 
+	background: #fff;
+	box-shadow: 0px 0 10px 10px rgba(0, 0, 0, 0.20);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	
+	.navbar-default {
+		background: #fff;
+		border: none;
+		border-radius: 0;
+		margin: 0 auto;
+		max-width: 1000px;
+		padding: 0 25px;
+
+		@media (min-width: $sm) {
+			padding-left: 45px;
+		}
+
+		.navbar-header {
+
+			.list-inline {
+				float: left;
+				padding: 0;
+				margin: 20px 0 40px;
+				
+				li {
+					padding: 0;
+					float: left;
+		
+					&:first-child {
+						width: 40%;
+						margin-right: 8%;
+					}
+		
+					&:last-child {
+						width: 52%;
+					}
+		
+					a {
+						display: inline-block;
+						
+						img {
+							width: 100%;
+						}
+					}
+		
+					@media (min-width: $xs) {
+						
+						&:first-child {
+							margin-right: 30px;
+						}
+		
+						&:first-child, &:last-child {
+							width: auto;
+						}				
+						
+						a {
+							img.logo-astellas {
+								width: 145px;
+							}
+			
+							img.logo-pfizer {
+								width: 200px;
+							}
+						}		
+					}
+				}
+			}
+		}
+	}
+}
+
+.headerBorder {
+	border-top: 2px solid #bcbcbc;
+	width: 100%;
+	position: fixed;
+	margin: 0;
+	top: 78px;
+	z-index: 999;
+}

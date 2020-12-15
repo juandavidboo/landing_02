@@ -1,0 +1,240 @@
+.book-fieldset{
+	padding-bottom: 30px;
+
+	&.paddingBottom-0{
+		padding-bottom: 0px;
+	}
+	
+	&:before {
+
+		@media (min-width: $sm) {
+			//border-right: 1px solid #522842;
+			content: '';
+			display: block;
+			height: calc(100% - 80px);
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	.input-wrapper {
+		color: $color-1;
+		display: block;
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 34px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		overflow: hidden;
+		position: relative;
+		padding-top: 10px;
+		//cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: 100%; //340px
+
+		@media (min-width: $md) {
+			//height: 54px; //linked to .book-input position and width properties
+		}
+
+		&:first-child {
+			//margin-top: 10px;
+		}
+
+		&-col-1 {
+			
+
+			@media (min-width: $md) {
+				display: inline-block;
+				width: 200px;
+
+				.book-input {
+					width:200px !important;
+				}
+			}
+		}
+		
+		&-col-2 {
+			
+
+			@media (min-width: $md) {
+				display: inline-block;
+				margin-left: 2%;
+				width: 50%;
+
+				.book-input {
+					width:148px !important;
+				}
+			}
+		}
+
+		.book-input  {
+			border: 1px solid #cccccc;
+			cursor: text;
+			display:block;
+			font-family: Whitney A,Whitney B, Arial, Helvetica, sans-serif;
+			font-size: 17px;
+			font-weight: normal;
+			height: 34px;
+			opacity: 100;
+			padding: 0 10px;
+			margin-top: 0px;
+			width: 360px;
+
+			/*@media (min-width: $md) { //linked to .input-wrapper / .message position and width properties
+				position: absolute;
+				left: 158px;
+				width: 320px;
+			}*/
+
+			&.small-input {
+
+				@media (min-width: $md) {
+					width: 200px;
+				}
+			}
+
+			&.error {
+				border-color: $color-error;
+			}
+		}
+
+		.message, label.error{
+			//display: block;
+			font-size: 10px;
+			
+			@media (min-width: $md) { //linked to .input-wrapper / .book-input position and width properties
+				/*position: absolute;
+				left: 160px;
+				top: 34px;*/
+			}
+		}
+
+
+		&.checkbox-18-over {
+			overflow: visible;
+			position: relative;
+			margin-bottom: 20px;
+				
+			//height: 52px;
+			
+			.label-text{
+				color: #000;
+				font-family: Whitney A,Whitney B, Arial, Helvetica, sans-serif;
+				font-weight: normal;
+				padding-left: 28px;
+			}
+
+			.message, label.error {
+			/*	position: absolute;
+				left: 46px;*/
+				display:block;
+				padding-left: 28px;
+			}
+
+
+			/* checkmark styles*/
+
+			/* Hide the browser's default radio button */
+			& input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			}
+
+			/* Create a custom radio button */
+			.checkmark {
+				position: absolute;
+				top: 18px;
+				left: 0px;
+				height: 18px;
+				width: 18px;
+				background-color: #fff;
+				border: 2px solid $color-3;
+
+				&.error{
+					border-color: $color-error;
+				}
+			}
+			
+			/* On mouse-over, add a grey background color */
+			&:hover input ~ .checkmark {
+				background-color: #ddd;
+			}
+			
+			/* When the radio button is checked, add a red background */
+			& input:checked ~ .checkmark {
+				background-color: $color-3;
+				border: none;
+			}
+			
+			/* Create the indicator (the check - hidden when not checked) */
+			.checkmark:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+			
+			/* Show the indicator (check) when checked */
+			& input:checked ~ .checkmark:after {
+				display: block;
+			}
+
+
+			/* Tooltip styles*/
+
+			.tooltip {
+				display: inline-block;
+				margin: 5px 5px 0 5px;
+				opacity: 100;
+
+				.tooltiptext {
+					background-color: #ccc;
+					color: #000;
+					font-family: Whitney A,Whitney B, Arial, Helvetica, sans-serif;
+					padding: 5px 0;
+					position: absolute;
+					right: -18px;
+					text-align: center;
+					top: -60px;
+					visibility: hidden;
+					width: 200px;
+					z-index: 1;
+
+					&::after {
+						content: "";
+						position: absolute;
+						top: 100%;
+						right: 10%;
+						margin-top: 0px;
+						border-width: 8px;
+						border-style: solid;
+						border-color: #ccc transparent transparent transparent;
+					}
+				}
+				  
+				 &:hover .tooltiptext {
+					visibility: visible;
+				}
+
+				@media (min-width: $xs) {
+					.tooltiptext {
+						top: -10px;
+						left: 40px;
+
+						&::after {
+							top: 50%;
+							right: 100%;
+							margin-top: -8px;
+							border-width: 8px;
+							border-color: transparent #ccc transparent transparent;
+						}
+					}
+				}
+			}			
+		}
+	}	
+}

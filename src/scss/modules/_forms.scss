@@ -1,0 +1,39 @@
+.form-wrapper {
+
+	h2 {
+		font-size: 17px;
+		line-height: 24px;
+		margin-bottom: 0;
+
+		@media (min-width: $xs) {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+	
+	.instruction {
+		color: $color-1;
+		display: inline-block;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 20px;
+		padding-bottom: 10px;
+
+		&.bottom-0{
+			padding-bottom: 0;
+		}
+	}
+
+	label.error {
+		color: $color-error;
+		font-family: Whitney A,Whitney B, Arial, Helvetica, sans-serif;
+			
+		font-style: normal;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 20px;
+		margin-bottom: 0;
+	}
+}

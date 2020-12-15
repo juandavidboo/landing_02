@@ -1,0 +1,30 @@
+.header {
+	overflow: auto;
+
+	h1 {
+		line-height: 20px;
+		margin-bottom: 25px;
+
+		@media (min-width: $xs) {
+			line-height: 36px;
+			margin-bottom: 15px;
+		}
+	}
+	
+	div {	
+		p {
+			font-size: 17px;
+			line-height: 21px;
+			margin-bottom: 20px;
+
+			&:last-child {
+				//margin-bottom: 0;
+			}
+	
+			@media (min-width: $xs) {
+				font-size: 16px;
+				line-height: 18px;
+			}
+		}	
+	}
+}

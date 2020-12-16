@@ -1,31 +1,5 @@
 .section {
 
-	h1 {
-		font-size: 20px;
-		line-height: 25px;
-		margin-bottom: 10px;
-
-		@media (min-width: $xs) {
-			font-size: 30px;
-			line-height: 35px;
-			margin-bottom: 20px;
-		}		
-	}
-
-	p {
-		color: $color-2;
-		font-size: 17px;
-		line-height: 21px;
-		margin-bottom: 10px;
-
-		@media (min-width: $xs) {
-			font-size: 16px;
-			line-height: 18px;
-			margin-top:8px;
-			margin-bottom: 20px;
-		}
-	}
-
 	button {
 		font-family: inherit; /* For all browsers */
 		font-size: 100%; /* For all browsers */

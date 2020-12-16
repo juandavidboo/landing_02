@@ -2,7 +2,11 @@
 	width: 1000px;
 	margin: 0 auto;
 	max-width: 100%;
-	padding: 0 70px;
+	padding: 0 25px;
+
+	@media (min-width: $sm) {
+		padding: 0 70px;	
+	}
 }
 
 .middle-content {

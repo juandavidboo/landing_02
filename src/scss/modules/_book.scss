@@ -49,10 +49,10 @@
 
 			@media (min-width: $md) {
 				display: inline-block;
-				width: 200px;
+				width: 190px;
 
 				.book-input {
-					width:200px !important;
+					//width:200px !important;
 				}
 			}
 		}
@@ -63,10 +63,10 @@
 			@media (min-width: $md) {
 				display: inline-block;
 				margin-left: 2%;
-				width: 50%;
+				width: auto;
 
 				.book-input {
-					width:148px !important;
+					width:138px !important;
 				}
 			}
 		}
@@ -82,18 +82,17 @@
 			opacity: 100;
 			padding: 0 10px;
 			margin-top: 0px;
-			width: 360px;
+			width: 100%;
 
-			/*@media (min-width: $md) { //linked to .input-wrapper / .message position and width properties
-				position: absolute;
-				left: 158px;
-				width: 320px;
-			}*/
+			@media (min-width: $md) {
+				
+				width: 340px;
+			}
 
 			&.small-input {
 
 				@media (min-width: $md) {
-					width: 200px;
+					width: 190px;
 				}
 			}
 
@@ -103,10 +102,9 @@
 		}
 
 		.message, label.error{
-			//display: block;
 			font-size: 10px;
 			
-			@media (min-width: $md) { //linked to .input-wrapper / .book-input position and width properties
+			@media (min-width: $md) {
 				/*position: absolute;
 				left: 160px;
 				top: 34px;*/
